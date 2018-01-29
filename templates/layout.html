@@ -11,17 +11,10 @@
 
 <div id="footer">
 
- {% if 'firstName' in session %} 
-   First Name: {{ session['firstName'] }}<br>
+ {% if 'score' in session %} 
+   Score: {{ session['score'] }}<br>
  {% endif %}
 
- {% if 'lastName' in session %} 
-   Last Name: {{ session['lastName'] }}<br>
- {% endif %}
-
- {% if 'favoriteColor' in session %} 
-   Favorite Color: {{ session['favoriteColor'] }}<br>
- {% endif %}
 
  <a href="/startOver">Start over</a>
 
