@@ -28,8 +28,7 @@ def renderPage1():
 
 @app.route('/page2',methods=['GET','POST'])
 def renderPage2():
-    #set the first and last name in the session
-    #session["score"] = request.form["answer"]
+    session["score"] = request.form["answer"]
     return render_template('page2.html')
 
 @app.route('/page3',methods=['GET','POST'])
